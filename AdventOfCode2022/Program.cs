@@ -49,6 +49,7 @@
             {
                 if (string.IsNullOrEmpty(line)) // we know new section starts here
                 {
+                    // for part 1 we technically wouldnt need a list just check if bigger than last "currentCalories" and if yes save into biggest var
                     calories.Add(currentCalorie);
                     currentCalorie = 0;
                 }
